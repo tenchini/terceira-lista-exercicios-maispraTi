@@ -250,35 +250,24 @@ footer p {
     }
 }
 
-/* --- REGRAS DE RESPONSIVIDADE --- */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Coloca os itens em coluna */
-        align-items: center; /* Centraliza os itens */
-        text-align: center; /* Centraliza o texto */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    /* Reordenando os itens para mobile (se a ordem padrão do HTML não for a desejada) */
-    /* Header: Coloca a imagem em cima do texto */
     .header-content-area .header-image {
-        /* Específico para o conteúdo do header */
-        order: 1; /* Item 1 (vem primeiro) */
+        order: 1;
     }
     .header-content-area .header-text {
-        /* Específico para o conteúdo do header */
-        order: 2; /* Item 2 (vem depois) */
+        order: 2;
     }
 
-    /* Visão: Coloca a imagem em cima do texto */
     .visao .visao-image {
-        /* Específico para a seção Visão */
-        order: 1; /* Item 1 (vem primeiro) */
+        order: 1;
     }
     .visao .visao-text {
-        /* Específico para a seção Visão */
-        order: 2; /* Item 2 (vem depois) */
+        order: 2;
     }
-
-    /* A seção "Missão" não precisa de 'order' aqui, pois no seu HTML a imagem já vem antes do texto,
-     * então a ordem natural já está correta no mobile quando flex-direction: column é aplicado. */
 }

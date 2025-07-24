@@ -100,24 +100,23 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Aplicando !important diretamente na regra base do .logo */
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: white !important; /* Força a cor branca */
-    text-decoration: none !important; /* Força a remoção do sublinhado AQUI */
+    color: white !important;
+    text-decoration: none !important;
     transition: color 0.3s ease;
 }
 
 .logo:link,
 .logo:visited {
-    color: white !important; /* Redundante mas mantém a especificidade */
-    text-decoration: none !important; /* Garante que não tenha sublinhado para visitados */
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .logo:hover {
     color: #007bff;
-    text-decoration: none !important; /* Garante que não tenha sublinhado no hover */
+    text-decoration: none !important;
 }
 
 .main-nav ul {
