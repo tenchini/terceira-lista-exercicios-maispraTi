@@ -1,7 +1,7 @@
 .main-header {
-    background-color: #333;
+    background-color: #007bff;
     color: white;
-    padding: 15px 20px;
+    padding: 0px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,20 +11,18 @@
 .logo {
     font-size: 1.8em;
     font-weight: bold;
-    color: white !important;
+    color: #fe8c68;
     text-decoration: none !important;
     transition: color 0.3s ease;
 }
 
 .logo:link,
 .logo:visited {
-    color: white !important;
-    text-decoration: none !important;
+    color: #fe8c68;
 }
 
 .logo:hover {
-    color: #007bff;
-    text-decoration: none !important;
+    color: white;
 }
 
 .main-nav ul {
@@ -46,7 +44,7 @@
 }
 
 .main-nav ul li a:hover {
-    color: #007bff;
+    color: #fe8c68;
 }
 
 .hamburger-menu {
@@ -66,11 +64,15 @@
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #333;
+        background-color: #007bff;
         text-align: center;
         padding: 10px 0;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         z-index: 1000;
+    }
+
+    .main-nav ul li a:hover {
+        color: #fe8c68;
     }
 
     .main-nav ul {

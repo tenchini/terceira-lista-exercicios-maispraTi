@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('assets/fundo.svg');
+    background-attachment: fixed;
     color: #333;
     line-height: 1.6;
     font-size: 16px;
@@ -28,12 +30,13 @@ h1 {
 }
 
 .gallery-container {
+    background-image: url('assets/fundo_inicio.svg');
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
-    background-color: #fff;
+    background-color: #f7f5f2;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -88,57 +91,6 @@ h1 {
     .image-gallery {
         grid-template-columns: 1fr;
     }
-}
-
-.main-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: white !important;
-    text-decoration: none !important;
-    transition: color 0.3s ease;
-}
-
-.logo:link,
-.logo:visited {
-    color: white !important;
-    text-decoration: none !important;
-}
-
-.logo:hover {
-    color: #007bff;
-    text-decoration: none !important;
-}
-
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.main-nav ul li {
-    margin-left: 25px;
-}
-
-.main-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-    color: #007bff;
 }
 
 .hamburger-menu {

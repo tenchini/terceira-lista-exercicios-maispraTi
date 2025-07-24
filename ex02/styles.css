@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap');
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    margin: 0;
     font-family: 'Quicksand', sans-serif;
-    color: #212529;
-    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('../assets/fundo.svg');
+    background-attachment: fixed;
+    color: #333;
     line-height: 1.6;
     font-size: 16px;
     display: flex;
@@ -17,11 +30,11 @@ main {
     margin-top: 40px;
     margin-bottom: 40px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    padding-right: 40px;
-    padding-left: 40px;
 }
 
 .container {
+    background-color: #f4f4f4;
+    background-image: url('../assets/fundo_comida.svg');
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -51,6 +64,7 @@ main {
 
 main {
     align-self: center;
+    background-image: url('../assets/fundo_comida.svg');
 }
 
 h1,
