@@ -3,89 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Exercício 01</title>
         <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
 
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="styles.css" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <title>Tenchini | Início</title>
     </head>
     <body>
-        <div class="main-header">
-            <div class="logo-wrapper"><a href="/main.html" class="logo">Tenchini</a></div>
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="main.html">Início</a></li>
-                    <li><a href="index.html">Exercício 01</a></li>
-                    <li><a href="lista.html">Exercício 02</a></li>
-                    <li><a href="feedback.html">Exercício 03</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-
-        <header class="main-header-page">
-            <div class="container header-content-area">
-                <div class="header-text">
-                    <h1>Quem é a <span>+praTi?</span></h1>
-                    <div id="importante">
-                        <p>
-                            Somos uma iniciativa da sociedade, sem fins lucrativos, que busca encontrar e capacitar
-                            novos talentos da área de TI. Queremos criar novas oportunidades na economia e transformar o
-                            modo como a tecnologia é vista pelas pessoas.
-                        </p>
-                    </div>
-                    <p class="ajustar">
-                        O nosso propósito é o que nos diferencia. Construímos um movimento voluntário, feito por pessoas
-                        e instituições que acreditam nos novos talentos da nossa sociedade e que buscam desenvolver a
-                        economia a partir do ensino da tecnologia. Você também acredita nisso?
-                    </p>
-                </div>
-                <div class="header-image">
-                    <img
-                        class="logo-mais"
-                        src="../assets/people-group.png"
-                        alt="Grupo de pessoas diversas interagindo com tecnologia: um homem sorrindo usando celular, uma mulher asiática com xícara e notebook, e uma mulher feliz com notebook." />
-                </div>
+        <header>
+            <div class="main-header">
+                <div class="logo-wrapper"><a href="index.html" class="logo">Tenchini</a></div>
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="main.html">Exercício 01</a></li>
+                        <li><a href="lista.html">Exercício 02</a></li>
+                        <li><a href="feedback.html">Exercício 03</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </header>
 
         <main>
-            <section class="missao">
-                <div class="container">
-                    <div class="missao-image">
-                        <img
-                            class="img-missao"
-                            src="../assets/purpose.png"
-                            alt="Homem e mulher apertando as mãos em frente à palavra 'pro' em azul, simbolizando parceria e propósito." />
-                    </div>
-                    <div class="missao-text">
-                        <h2>Missão</h2>
-                        <p class="destaque">
-                            Potencializar a economia do Estado, contribuir com a transformação digital e dar
-                            protagonismo à tecnologia e a inovação, tornando esses indutores para a geração de
-                            desenvolvimento, emprego e renda no Rio Grande do Sul.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section class="visao">
-                <div class="container">
-                    <div class="visao-text">
-                        <h2>Visão</h2>
-                        <p>
-                            Ser um agente efetivo de mudanças por meio do desenvolvimento de novos talentos na área de
-                            TI, possibilitando a geração de emprego, renda e, estruturalmente, a ampliação da capacidade
-                            de produtos e serviços intensivos em conhecimento com maior valor agregado!
-                        </p>
-                    </div>
-                    <div class="visao-image">
-                        <img
-                            class="logo-ti"
-                            src="../assets/future.png"
-                            alt="Jovem sorridente com braços cruzados em frente a formas geométricas abstratas em laranja, representando o futuro e inovação." />
+            <section class="gallery-section">
+                <h1>Galeria Flexbox e Grid & Menu Hamburger</h1>
+
+                <div class="gallery-container">
+                    <div class="image-gallery">
+                        <figure class="gallery-item">
+                            <img src="assets/cat_prog.gif" alt="Gif de um Gato digitando em um teclado" />
+                            <figcaption>Gato programador</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/goku_botafogo.jpeg" alt="Goku de Dragon Ball com camisa do Botafogo" />
+                            <figcaption>Goku Botafoguense</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/gon_java.jpg" alt="Gon de HxH lendo Use a Cabeça Java" />
+                            <figcaption>Gon Javeiro</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/vila_oculta_do_java.png" alt="Bandana da Vila Oculta do Java" />
+                            <figcaption>Vila Oculta do Java</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img
+                                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmV2cHh5aW5kdDd2emNzZWIzeHE5MDJhOXN4ODJ5OTY4MzNnbDJsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yYSSBtDgbbRzq/giphy.gif"
+                                alt="Peter Griffin tentando arrumar uma cortina com o nome CSS" />
+                            <figcaption>Peter frustrado</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/luffy_botafogo.jpeg" alt="Luffy de One Piece com a camisa do Botafogo" />
+                            <figcaption>Luffy Botafoguense</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/nao_tem_condicao.jpeg" alt="Um if sem condição" />
+                            <figcaption>Sem condições</figcaption>
+                        </figure>
+
+                        <figure class="gallery-item">
+                            <img src="assets/pim_smiling_friends.jpg" alt="Pim de Smiligin Friends" />
+                            <figcaption>Pim gritando</figcaption>
+                        </figure>
                     </div>
                 </div>
             </section>
@@ -96,6 +85,6 @@
             <p class="copyright">&copy; 2025 | Tenchini - Todos os direitos reservados.</p>
         </footer>
 
-        <script src="../scripts.js" defer></script>
+        <script src="scripts.js" defer></script>
     </body>
 </html>
