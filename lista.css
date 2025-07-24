@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('../assets/fundo.svg');
+    background-image: url('assets/fundo.svg');
     background-attachment: fixed;
     color: #333;
     line-height: 1.6;
@@ -34,7 +34,7 @@ main {
 
 .container {
     background-color: #f4f4f4;
-    background-image: url('../assets/fundo_comida.svg');
+    background-image: url('assets/fundo_comida.svg');
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -64,7 +64,7 @@ main {
 
 main {
     align-self: center;
-    background-image: url('../assets/fundo_comida.svg');
+    background-image: url('assets/fundo_comida.svg');
 }
 
 h1,
@@ -108,7 +108,7 @@ footer p {
 }
 
 .image-band {
-    background-image: url('../assets/ti.png');
+    background-image: url('assets/ti.png');
     background-repeat: repeat-x;
     background-position: center;
     background-size: contain;
