@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+main h1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #007de3;
+    text-align: center;
+}
+
+main h1 span {
+    color: #fe8c68;
+}
+
+form {
+    border-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: bold;
+    color: #007de3;
+    padding: 0 10px;
+    font-size: 1.15em;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 1em;
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+    background-color: #fffcc8;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    border-color: black;
+    font-size: 1em;
+    color: #343a40;
+    box-sizing: border-box;
+    transform: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #6c757d;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+select:focus,
+textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button[type='submit'] {
+    display: block;
+    width: 100%;
+    padding: 14px 25px;
+    background-color: #007de3;
+    border-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type='submit']:hover {
+    background-color: #0056b3;
+}
+
+.image-band {
+    background-image: url('../assets/ti.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.footer {
+    background-color: #007de3;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    label,
+    input[type='text'],
+    input[type='email'],
+    select,
+    textarea,
+    button[type='submit'] {
+        font-size: 0.95em;
+    }
+}

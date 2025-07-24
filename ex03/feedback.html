@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <link rel="stylesheet" href="../components/navbar.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <title>Exercício 03</title>
+    </head>
+    <body>
+        <header>
+            <div id="navbar-placeholder"></div>
+        </header>
+        <main>
+            <h1>Formulário <span>+praTi</span></h1>
+            <form action="/inscrever" method="POST">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autofocus />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço Completo:</label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required />
+                    </div>
+                    <div>
+                        <label for="tipo_feedback">Tipo de Feedback:</label>
+                        <select id="tipo_feedback" name="tipo_feedback" required>
+                            <option value="">Selecione o tipo de feedback</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="critica">Crítica/Reclamação</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="feedback_texto">Seu Feedback:</label>
+                        <textarea
+                            id="feedback_texto"
+                            name="feedback_texto"
+                            rows="7"
+                            placeholder="Escreva seu feedback aqui..."
+                            required></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </main>
+        <div
+            class="image-band"
+            alt="Padrão decorativo abstrato com figuras geométricas azuis e laranjas repetidas sobre fundo preto, evocando elementos de tecnologia e TI."></div>
+        <footer class="footer">
+            <p class="copyright">&copy; 2025 | Tenchini - Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="../js/loadComponents.js" defer></script>
+    </body>
+</html>

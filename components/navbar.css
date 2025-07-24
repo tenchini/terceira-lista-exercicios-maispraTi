@@ -1,0 +1,92 @@
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Aplicando !important diretamente na regra base do .logo */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white !important; /* Força a cor branca */
+    text-decoration: none !important; /* Força a remoção do sublinhado AQUI */
+    transition: color 0.3s ease;
+}
+
+.logo:link,
+.logo:visited {
+    color: white !important; /* Redundante mas mantém a especificidade */
+    text-decoration: none !important; /* Garante que não tenha sublinhado para visitados */
+}
+
+.logo:hover {
+    color: #007bff;
+    text-decoration: none !important; /* Garante que não tenha sublinhado no hover */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #007bff;
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-nav.nav-open {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
